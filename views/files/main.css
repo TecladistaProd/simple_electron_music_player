@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    cursor: default;
+    word-break: break-all;
+}
+body{
+    width: 100%;
+    height: 100%;
+}
+body h1:first-child{
+    text-align: center;
+    color: #333;
+}
+#app{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background:#4B83FF;
+    display: flex;
+    flex-flow:column wrap;
+    justify-content: space-between;
+}
+.buttons{
+    padding: .2rem;
+    background: #91CC28;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow:0px -1.5px 18px 0px #234FB2;
+}
+
+.buttons button{
+    padding: .2rem;
+    border: none;
+    background: none;
+}
+.buttons button:active{
+    border: none;
+    background: none;
+}
+.buttons button i{
+    font-size: 3rem;
+    color: #234FB2;
+    cursor: pointer;
+}
+.buttons button i:hover{
+    font-size: 3rem;
+    color: #82B22C;
+}
+.buttons button i:active{
+    font-size: 3rem;
+    color: #fff
+}
+.buttons .progress{
+    padding-top:.2rem;
+    text-align: center;
+    width: 40%;
+}
+.buttons .progress div:first-child{
+    background: #FF7F65;
+    cursor: pointer;
+}
+.buttons .progress span{
+    text-align: center;
+    cursor:default;
+}
+.buttons .progress div:first-child .bar{
+    background:#4b83ff;
+    height: 1.5rem;
+    width:0;
+}
+
+.buttons .volume{
+    padding-top:.2rem;
+    text-align: center;
+}
+.buttons .volume div:first-child{
+    transform: rotateZ(180deg);
+    background: #FF7F65;
+    cursor: pointer;
+    height: 5rem;
+}
+.buttons .volume div:first-child .bar{
+    background:#4b83ff;
+    width: 1.7rem;
+    height:100%;
+}
+
+.white{
+    color: #fff !important;
+}
+
+@media screen and (max-height: 145px){
+    #app{
+        justify-content: flex-end;
+    }
+    #app h1:first-child{
+        display:none;
+    }
+    .buttons{
+        padding: .1rem;
+    }
+    .buttons .volume{
+        padding-top:.2rem;
+        text-align: center;
+    }
+    .buttons .volume div:first-child{
+        background: #FF7F65;
+        cursor: pointer;
+        height: 2rem;
+    }
+    .buttons .volume div:first-child .bar{
+        background:#4b83ff;
+        width: 1.7rem;
+        height:100%;
+    }
+}

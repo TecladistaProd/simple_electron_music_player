@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Audio Player</title>
+    <link rel="stylesheet" href="files/fontawesome/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="files/main.css">
+</head>
+<body>
+    <audio hidden autoplay="false"></audio>
+    <div id="app">
+        <h1>Click in menu 'File' above to select the file(s) or the path</h1>
+        <nav class="buttons">
+            <button id="play">
+                <i class="far fa-play-circle"></i>
+            </button>
+            <button id="repeat">
+                <i class="fas fa-redo"></i>
+            </button>
+            <button id="back">
+                <i class="fas fa-step-backward"></i>
+            </button>
+            <div class="progress">
+                <div>
+                    <div class="bar"></div>
+                </div>
+                <span class="time">
+                    0:00 - 0:00
+                </span>
+            </div>
+            <button id="for">
+                <i class="fas fa-step-forward"></i>
+            </button>
+            <button id="random">
+                <i class="fas fa-random"></i>
+            </button>
+            <button id="stop">
+                <i class="far fa-stop-circle"></i>
+            </button>
+            <div class="volume">
+                <div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <script src="files/main.js">
+    </script>
+</body>
+</html>
